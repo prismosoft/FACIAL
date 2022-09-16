@@ -22,11 +22,11 @@ import re
 import copy
 import resampy
 import numpy as np
-import tensorflow as tf
 from python_speech_features import mfcc
-
 from tqdm import tqdm
 
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 def interpolate_features(features, input_rate, output_rate, output_len=None):
     num_features = features.shape[1]
