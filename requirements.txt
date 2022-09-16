@@ -3,7 +3,7 @@ torchvision
 tqdm
 pandas
 numpy
-scipy == 1.2.0
+scipy == 1.4.0
 chumpy
 scikit-image
 imageio
